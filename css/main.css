@@ -1,0 +1,45 @@
+/**
+ * 项目css文件
+ */
+
+/**
+ * 公告样式
+ */
+body {
+	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+/**
+ * 项目样式区域
+ */
+#header {
+
+}
+
+#header > .container {
+	/*height: 40px;
+	background-color: #f40;*/
+}
+
+#header > .container > .topbar {
+	height: 40px;
+}
+/**
+ * 测试区域
+ */
+section {
+	background-color: #e0e0e0;
+	height: 200px;
+}
+
+section:nth-of-type(2n) {
+	background-color: #eee;
+}
+
+#header > .container > .topbar> .row > div {
+	background-color: #f40;
+}
+
+#header > .container > .topbar > .row > div:nth-of-type(2n) {
+	background-color: #f80;
+}
