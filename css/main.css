@@ -106,9 +106,11 @@ fieldset[disabled] .btn-linked.active {
 .navbar-ccs {
   background-color: #fff;
   border-color: #e7e7e7;
+  margin-bottom: 0px;
 }
 .navbar-ccs .navbar-brand {
   color: #777;
+  height: 80px;
 }
 .navbar-ccs .navbar-brand:hover,
 .navbar-ccs .navbar-brand:focus {
@@ -120,17 +122,20 @@ fieldset[disabled] .btn-linked.active {
 }
 .navbar-ccs .navbar-nav > li > a {
   color: #777;
+  line-height: 48px;
 }
 .navbar-ccs .navbar-nav > li > a:hover,
 .navbar-ccs .navbar-nav > li > a:focus {
   color: #333;
   background-color: transparent;
+  border-bottom: 2px solid #00BFFF;
 }
 .navbar-ccs .navbar-nav > .active > a,
 .navbar-ccs .navbar-nav > .active > a:hover,
 .navbar-ccs .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: transparent;
+  border-bottom: 2px solid #00BFFF;
 }
 .navbar-ccs .navbar-nav > .disabled > a,
 .navbar-ccs .navbar-nav > .disabled > a:hover,
@@ -230,6 +235,14 @@ body {
   content: "\e909";
   font-size: 15px;
 }
+
+.icon-logo::before {
+  content: "\e93e";
+}
+
+.icon-icon::before {
+  content: "\e920";
+}
 /**
  * 头部区域
  */
@@ -280,10 +293,39 @@ body {
 	text-decoration: none;
 }
 
+#header .icon-icon {
+  font-size: 50px;
+  color: #E92322;
+  line-height: 50px;
+  vertical-align: middle;
+
+}
+
+#header .icon-logo {
+  font-size: 32px;
+  color: #333;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+/**
+ * 广告轮播
+ */
+#main_ad {
+	
+}
+
+#main_ad .item {
+	height: 410px;
+	background-color: #f40;
+}
+
+#main_ad .item
+
 /**
  * 测试区域
  */
-section {
+/* section {
 	background-color: #e0e0e0;
 	height: 200px;
 }
@@ -299,5 +341,5 @@ section:nth-of-type(2n) {
 
 #header > .container > .topbar > .row > div:nth-of-type(2n) {
 	background-color: #eee;
-	
+	 */
 }
