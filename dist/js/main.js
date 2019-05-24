@@ -1,0 +1,1 @@
+$(function(){$(window).on("resize",function(){var t=$(window).width()<750;$("#main_ad > .carousel-inner >.item").each(function(i,a){var n=$(a),r=t?n.data("img-sm"):n.data("img-lg");n.css({backgroundImage:"url("+r+")"}),t?n.html('<img src="'+r+'" alt="" />'):n.html("")})}).trigger("resize")});
