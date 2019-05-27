@@ -2,6 +2,148 @@
  * 项目css文件
  */
 
+
+
+
+/**
+ * 公告样式
+ */
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+/*字体图标*/
+@font-face {
+    font-family: 'wjsfont';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: wjsfont;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.icon-mobilephone::before {
+    content: "\e908";
+    font-size: 14px;
+}
+
+.icon-telephone::before {
+    content: "\e909";
+    font-size: 15px;
+}
+
+.icon-logo::before {
+    content: "\e93e";
+}
+
+.icon-icon::before {
+    content: "\e920";
+}
+
+/**
+ * 头部区域
+ */
+#header {}
+
+#header>.topbar {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#header>.topbar>.container {
+    height: 40px;
+}
+
+#header>.topbar>.container>.row>div {
+    height: 40px;
+    line-height: 40px;
+    color: #888;
+}
+
+#header>.topbar>.container>.row>div+div {
+    border-left: 1px solid #c0c0c0;
+}
+
+#header .mobile-line {
+    color: #888;
+}
+
+#header .mobile-line>img {
+    display: none;
+}
+
+#header .mobile-line:hover {
+    text-decoration: none;
+}
+
+#header .mobile-line:hover>img {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+#header .bar-login>a {
+    color: #888;
+    text-decoration: none;
+}
+
+#header .icon-icon {
+    font-size: 50px;
+    color: #E92322;
+    line-height: 50px;
+    vertical-align: middle;
+
+}
+
+#header .icon-logo {
+    font-size: 32px;
+    color: #333;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+/**
+ * 广告轮播
+ */
+#main_ad {}
+
+#main_ad > .carousel-inner > .item {
+    background-color: #f40;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#main_ad > .carousel-inner > .item > img {
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    #main_ad > .carousel-inner > .item {
+        height: 410px;
+    }
+}
+
+/**
+ * 特色介绍
+ */
+#tsjs {
+    padding: 40px 0;
+}
+
+.icon-uniE907:before {
+  content: "\e907";
+}
+
+#tsjs > .container > .row [class^="icon-"] {
+    font-size: 34px;
+    vertical-align: middle;
+}
+
 /**
  * 自定义bootstrap样式
  */
@@ -229,127 +371,3 @@ fieldset[disabled] .navbar-ccs .btn-link:focus {
 }
 
 /*/navbar-css*/
-
-
-/**
- * 公告样式
- */
-body {
-    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-}
-
-/*字体图标*/
-@font-face {
-    font-family: 'wjsfont';
-    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-    font-family: wjsfont;
-    font-size: 12px;
-    font-style: normal;
-}
-
-.icon-mobilephone::before {
-    content: "\e908";
-    font-size: 14px;
-}
-
-.icon-telephone::before {
-    content: "\e909";
-    font-size: 15px;
-}
-
-.icon-logo::before {
-    content: "\e93e";
-}
-
-.icon-icon::before {
-    content: "\e920";
-}
-
-/**
- * 头部区域
- */
-#header {}
-
-#header>.topbar {
-    border-bottom: 1px solid #c0c0c0;
-}
-
-#header>.topbar>.container {
-    height: 40px;
-}
-
-#header>.topbar>.container>.row>div {
-    height: 40px;
-    line-height: 40px;
-    color: #888;
-}
-
-#header>.topbar>.container>.row>div+div {
-    border-left: 1px solid #c0c0c0;
-}
-
-#header .mobile-line {
-    color: #888;
-}
-
-#header .mobile-line>img {
-    display: none;
-}
-
-#header .mobile-line:hover {
-    text-decoration: none;
-}
-
-#header .mobile-line:hover>img {
-    display: block;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -60px;
-}
-
-#header .bar-login>a {
-    color: #888;
-    text-decoration: none;
-}
-
-#header .icon-icon {
-    font-size: 50px;
-    color: #E92322;
-    line-height: 50px;
-    vertical-align: middle;
-
-}
-
-#header .icon-logo {
-    font-size: 32px;
-    color: #333;
-    line-height: 50px;
-    vertical-align: middle;
-}
-
-/**
- * 广告轮播
- */
-#main_ad {}
-
-#main_ad > .carousel-inner > .item {
-    background-color: #f40;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#main_ad > .carousel-inner > .item > img {
-    width: 100%;
-}
-
-@media (min-width: 750px) {
-    #main_ad > .carousel-inner > .item {
-        height: 410px;
-    }
-}
