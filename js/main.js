@@ -27,4 +27,7 @@ $(function() {
 
     //页面尺寸改变时出发
     $(window).on('resize', resizeScreen).trigger('resize');
+
+    // 初始化tooltips
+    $('[data-toggle="tooltip"]').tooltip()
 });
