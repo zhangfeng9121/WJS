@@ -133,6 +133,7 @@ body {
  */
 #tsjs {
     padding: 40px 0;
+    border-bottom: 1px solid #c0c0c0;
 }
 
 .icon-uniE907:before {
@@ -144,9 +145,181 @@ body {
     vertical-align: middle;
 }
 
+#tsjs > .container > .row > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/**
+ * 立即预约
+ */
+#ljyy {
+    border-bottom: 1px solid #c0c0c0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#ljyy > .container > p {
+    font-size: 14px;
+    margin-bottom: 0;
+    vertical-align: baseline;
+}
+
+#ljyy > .container > p [class^="icon-"] {
+    font-size: 16px;
+    color: #00BFFF;
+    padding-right: 10px;
+
+}
+
+#ljyy > .container > p.pull-left > span, 
+#ljyy > .container > p.pull-left > a,
+#ljyy > .container > p.pull-right > a {
+    color: #00BFFF;
+}
+
+#ljyy > .container > p.pull-left > a:hover{
+    text-decoration: none;
+    border-bottom: 1px dashed #00BFFF;
+}
+
+#ljyy > .container > p.pull-right > a:hover{
+    text-decoration: none;
+    border-bottom: 1px dashed #00BFFF;
+}
+
+.icon-uniE906:before {
+  content: "\e906";
+}
+
+.icon-uniE905:before {
+  content: "\e905";
+}
+
+/**
+ * 产品推荐
+ */
+#cptj {
+    background-color: #F0F0F0;
+    padding: 40px 0;
+}
+
+#cptj > .container > .nav-tabs {
+    padding-left: 20px;
+}
+
+#cptj > .container > .nav-tabs > li > a {
+    font-size: 16px;
+    color: #333;
+    border-color: transparent;
+}
+
+#cptj > .container > .nav-tabs > li.active > a {
+    background-color: transparent;
+    border-bottom: 5px solid #00BFFF;
+}
+
+#cptj > .container > .nav-tabs > li > a:hover {
+    color: #222;
+    border-color: transparent;
+    border-bottom: 5px solid #00BFFF;
+}
+
+#cptj > .container > .tab-content {
+    padding-top: 20px;
+}
+
+#cptj .panel-ccs {
+    background-color: #fff;
+}
+
+#cptj .panel-ccs > .panel-heading {
+    width: 120px;
+    height: 150px;
+    padding: 0;
+    border-left: 1px dashed #c0c0c0;
+    position: relative;
+    text-align: center;
+}
+
+#cptj .panel-ccs > .panel-heading::before,
+#cptj .panel-ccs > .panel-heading::after {
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    position: absolute;
+}
+
+#cptj .panel-ccs > .panel-heading::before {
+    top: -8px;
+    left: -8px;
+}
+
+#cptj .panel-ccs > .panel-heading::after {
+    bottom: -8px;
+    left: -8px;
+    box-shadow: 0 2px 3px #ccc inset;
+}
+
+
+
+
+#cptj .panel-ccs > .panel-body {
+    height: 150px;
+    margin-right: 120px;
+    position: relative;
+}
+
+#cptj .panel-ccs.actived {
+    background-color: #f40;
+    color: #fff;
+}
+
+#cptj .panel-ccs.disabled {
+    background-color: #ccc;
+    color: #fff;
+}
+
+#cptj .panel-ccs.actived::before {
+    content: '\e915';
+    font-family: 'wjsfont';
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    top: -9px;
+    left: 15px;
+}
+
+#cptj .panel-ccs > .panel-body p {
+   margin-bottom: 0;
+}
+
 /**
  * 自定义bootstrap样式
  */
+
+/*panel-ccs*/
+.panel-ccs {
+  border-color: #ddd;
+}
+.panel-ccs > .panel-heading {
+  color: #333;
+  border-color: #ddd;
+}
+.panel-ccs > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-ccs > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+.panel-ccs > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+/*/panel-ccs*
 
 /*ccs*/
 .btn-ccs {
