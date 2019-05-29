@@ -22,12 +22,30 @@ $(function() {
             }
         });
 
-
+        // ul滚动条设置
+        var ulWidth = 40;
+        $("#cptj .ul-wapper .nav-tabs").children().each(function(index, el) {
+            ulWidth += el.clientWidth;
+            console.log(ulWidth);
+        });
+        if(ulWidth > $(window).width()) {
+            $("#cptj .ul-wapper .nav-tabs").css({
+                'width': ulWidth,
+            }).parent().css({
+                'overflow-x':'scroll'
+            });;
+        }else {
+             $("#cptj .ul-wapper .nav-tabs").css({
+                'width': '',
+            }).parent().css({
+                'overflow-x':''
+            });;
+        }
     }
 
     //页面尺寸改变时出发
     $(window).on('resize', resizeScreen).trigger('resize');
 
     // 初始化tooltips
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
 });

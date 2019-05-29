@@ -297,12 +297,17 @@
     <section id="cptj">
         <div class="container">
             <!-- 选项卡 标题 -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#tab_01" aria-controls="tab_01" role="tab" data-toggle="tab">Home</a></li>
-                <li role="presentation"><a href="#tab_02" aria-controls="tab_02" role="tab" data-toggle="tab">Profile</a></li>
-                <li role="presentation"><a href="#tab_03" aria-controls="tab_03" role="tab" data-toggle="tab">Messages</a></li>
-                <li role="presentation"><a href="#tab_04" aria-controls="tab_04" role="tab" data-toggle="tab">Settings</a></li>
-            </ul>
+            <div class="ul-wapper">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab_01" aria-controls="tab_01" role="tab" data-toggle="tab">Home</a></li>
+                    <li role="presentation"><a href="#tab_02" aria-controls="tab_02" role="tab" data-toggle="tab">Profile</a></li>
+                    <li role="presentation"><a href="#tab_03" aria-controls="tab_03" role="tab" data-toggle="tab">Messages</a></li>
+                    <li role="presentation"><a href="#tab_04" aria-controls="tab_04" role="tab" data-toggle="tab">Settings</a></li>
+                    <li role="presentation"><a href="#tab_02" aria-controls="tab_02" role="tab" data-toggle="tab">Profile</a></li>
+                    <li role="presentation"><a href="#tab_03" aria-controls="tab_03" role="tab" data-toggle="tab">Messages</a></li>
+                    <li role="presentation"><a href="#tab_04" aria-controls="tab_04" role="tab" data-toggle="tab">Settings</a></li>
+                </ul>
+            </div>
             <!-- 选项卡  内容 -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active fade in" id="tab_01">
@@ -483,7 +488,16 @@
     </section>
     <!-- /产品推荐 -->
     <!-- 新闻列表 -->
-    <section>
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-3">
+                    <div class="news-title">全部新闻</div>
+                </div>
+                <div class="col-sm-1">2</div>
+                <div class="col-sm-6">3</div>
+            </div>
+        </div>
     </section>
     <!-- /新闻列表 -->
     <!-- 合作伙伴 -->
@@ -491,7 +505,7 @@
     </section>
     <!-- /合作伙伴 -->
     <!-- 脚注区域 -->
-    <footer>
+    <footer id="footer">
     </footer>
     <!-- /脚注区域 -->
     <script src="lib/jquery/jquery-3.4.1.min.js">
