@@ -343,7 +343,22 @@ body {
 }
 
 #news .news-title {
-    
+    padding: 15px 0;
+    font-size: 16px;
+    border-bottom: 1px dashed #c0c0c0;
+    position: relative;
+    margin-right: 14px;
+}
+
+#news .news-title::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    border: 1px solid #c0c0c0;
+    position: absolute;
+    bottom: -7px;
+    right: -14px;
 }
 
 /**
